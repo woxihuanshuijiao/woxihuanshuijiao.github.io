@@ -36,11 +36,13 @@
   <!-- 页面元数据 -->
   <title>wyh的博客</title>
   <meta name="keywords" content="">
-  <meta desc name="description" content="wyh的博客 - wyh - wyh的博客">
-  <meta property="og:type" content="website">
+  <meta desc name="description" content="一些随手记 - wyh - wyh的博客">
+  
+<meta property="og:type" content="website">
 <meta property="og:title" content="wyh的博客">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="wyh的博客">
+<meta property="og:description" content="一些随手记">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:author" content="wyh">
@@ -2108,7 +2110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1691829609182),
+    lastupdate: new Date(1695568062441),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2215,11 +2217,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/docs/" title="随笔"
+                href="/categories/%E6%8A%80%E6%9C%AF/" title="技术"
                   
                   
                   
-                    active-action="action-docs"
+                    active-action="action-categoriesE68A80E69CAF"
+                  >
+                  <i class='fa-solid fa-info-circle fa-fw'></i>技术
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/%E9%9A%8F%E7%AC%94/" title="随笔"
+                  
+                  
+                  
+                    active-action="action-categoriesE99A8FE7AC94"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>随笔
                 </a>
@@ -2232,11 +2251,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/post/" title="影集"
+                href="/categories/%E5%BD%B1%E9%9B%86/" title="影集"
                   
                   
                   
-                    active-action="action-post"
+                    active-action="action-categoriesE5BDB1E99B86"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>影集
                 </a>
@@ -2262,30 +2281,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
           
           
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
-                  
-                  
-                  
-                    active-action="action-about"
-                  >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
-                </a>
-                
-              </li>
-            
-          
-          
 				</ul>
 			</div>
       
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
           <i class="icon fa-solid fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="Search..." />
+          <input type="text" class="input u-search-input" placeholder="搜索..." />
         </form>
       </div>
       
@@ -2319,11 +2321,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/docs/" title="随笔"
+                href="/categories/%E6%8A%80%E6%9C%AF/" title="技术"
                   
                   
                   
-                    active-action="action-docs"
+                    active-action="action-categoriesE68A80E69CAF"
+                  >
+                  <i class='fa-solid fa-info-circle fa-fw'></i>技术
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/%E9%9A%8F%E7%AC%94/" title="随笔"
+                  
+                  
+                  
+                    active-action="action-categoriesE99A8FE7AC94"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>随笔
                 </a>
@@ -2336,11 +2355,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/post/" title="影集"
+                href="/categories/%E5%BD%B1%E9%9B%86/" title="影集"
                   
                   
                   
-                    active-action="action-post"
+                    active-action="action-categoriesE5BDB1E99B86"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>影集
                 </a>
@@ -2366,23 +2385,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
           
             
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
-                  
-                  
-                  
-                    active-action="action-about"
-                  >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
-                </a>
-                
-              </li>
-            
-          
-            
           </ul>
         </li>
 			</ul>
@@ -2401,7 +2403,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       <div class="cover-wrapper  dock" id='full'>
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://get.wallhere.com/photo/China-xinjiang-mountains-landscape-skyscape-clouds-grass-nature-sky-trees-snow-2256722.jpg"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="/img/bg3.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2425,25 +2427,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='https://cdn-icons-png.flaticon.com/512/11473/11473570.png'><p>博客</p>
             </a>
           
-            <a href="/docs/"
+            <a href="/categories/%E6%8A%80%E6%9C%AF/"
               
               
-              active-action="action-docs">
+              active-action="action-categoriesE68A80E69CAF">
+              <img src='https://cdn-icons-png.flaticon.com/512/11473/11473574.png'><p>技术</p>
+            </a>
+          
+            <a href="/categories/%E9%9A%8F%E7%AC%94/"
+              
+              
+              active-action="action-categoriesE99A8FE7AC94">
               <img src='https://cdn-icons-png.flaticon.com/256/11473/11473591.png'><p>随笔</p>
             </a>
           
-            <a href="/post/"
+            <a href="/categories/%E5%BD%B1%E9%9B%86/"
               
               
-              active-action="action-post">
+              active-action="action-categoriesE5BDB1E99B86">
               <img src='https://cdn-icons-png.flaticon.com/512/11473/11473597.png'><p>影集</p>
-            </a>
-          
-            <a href="/about/"
-              
-              
-              active-action="action-about">
-              <img src='https://cdn-icons-png.flaticon.com/512/11473/11473574.png'><p>关于</p>
             </a>
           
         
@@ -2472,6 +2474,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
@@ -2479,13 +2483,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/08/你好/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/24/Fall-into-berserk-dark/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="wyh的博客">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
     <meta itemprop="name" content="wyh的博客">
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="一些随手记">
   </span>
   
   
@@ -2497,7 +2501,74 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/08/%E4%BD%A0%E5%A5%BD/"  itemprop="url">
+      <a href="/2023/09/24/Fall-into-berserk-dark/"  itemprop="url">
+        Fall into berserk dark
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png">
+            <meta itemprop="name" content="wyh">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-24T23:02:04+08:00">2023-09-24</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/24/Fall-into-berserk-dark/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/24/你好/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="wyh的博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="wyh的博客">
+    <meta itemprop="description" content="一些随手记">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/24/%E4%BD%A0%E5%A5%BD/"  itemprop="url">
         你好
       </a>
     </h2>
@@ -2505,8 +2576,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        这里是我的博客wangyuhan~
-
+        这里是我的博客，本站正在建设中 :-)
       
     
   </div>
@@ -2514,12 +2584,36 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-08-08T10:25:00+08:00">2023-08-08</time>
+          
+          <a class='avatar' href='/'><img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png">
+            <meta itemprop="name" content="wyh">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-24T20:24:38+08:00">2023-09-24</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%BD%B1%E9%9B%86/">影集</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span class="sep"></span><a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%BD%B1%E9%9B%86/" itemprop="url"><span itemprop="name">影集</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">技术</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/2023/08/08/%E4%BD%A0%E5%A5%BD/' itemprop="url">
+          <a class='readmore' href='/2023/09/24/%E4%BD%A0%E5%A5%BD/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2610,6 +2704,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+  
+  <section class="widget category desktop">
+    
+  <header>
+    
+      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%BD%B1%E9%9B%86/" href="/categories/%E5%BD%B1%E9%9B%86/"
+            active-action="action-categoriesE5BDB1E99B86"
+            ><div class='name'>影集</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%8A%80%E6%9C%AF/" href="/categories/%E6%8A%80%E6%9C%AF/"
+            active-action="action-categoriesE68A80E69CAF"
+            ><div class='name'>技术</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
+            active-action="action-categoriesE99A8FE7AC94"
+            ><div class='name'>随笔</div><div class='badge'>(2)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
 
     
   
@@ -3115,7 +3241,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"wyh的博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"wyh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"wyh的博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"wyh的博客","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"wyh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"wyh的博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"wyh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"wyh的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"wyh的博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"wyh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"一些随手记"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"wyh的博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"wyh的博客","url":"http://example.com/","keywords":null,"description":"一些随手记","author":{"@type":"Person","name":"wyh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"一些随手记"},"publisher":{"@type":"Organization","name":"wyh的博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一些随手记","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"wyh","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"wyh的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
