@@ -7,27 +7,19 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2299">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1">{{ if not site.Config.Privacy.GoogleAnalytics.Disable }}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{{ with site.Config.Services.GoogleAnalytics.ID }}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>var doNotTrack = false;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if ({{ site.Config.Privacy.GoogleAnalytics.RespectDoNotTrack }}) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>doNotTrack = (dnt == "1" || dnt == "yes");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (!doNotTrack) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>window.dataLayer = window.dataLayer || [];</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function gtag(){dataLayer.push(arguments);}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>gtag('js', new Date());</p>
-<p class="p1"><span class="Apple-converted-space">        </span>gtag('config', '{{ . }}');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{{ end }}</p>
-<p class="p1">{{ end }}</p>
+<p class="p1"><span class="s1">{{ with site.Config.Services.GoogleAnalytics.ID }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>window.dataLayer = window.dataLayer || [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function gtag(){dataLayer.push(arguments);}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>gtag('js', new Date());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>gtag('config', '{{ . }}');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">{{ end }}</span></p>
 </body>
 </html>
