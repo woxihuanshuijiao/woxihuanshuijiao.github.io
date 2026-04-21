@@ -1,6 +1,6 @@
 baseURL = 'https://woxihuanshuijiao.github.io/'
 languageCode = 'en-us'
-title = '菡's Land'
+title = "菡's Land"
 theme = "PaperMod"
 
 [menu]
