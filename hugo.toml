@@ -9,8 +9,3 @@ theme = "PaperMod"
     name = "目录" # 网页上显示的按钮名字
     url = "/categories/" 
     weight = 10 
-
-
-[services]
-  [services.googleAnalytics]
-    id = "G-XXXXXXXXXX"
