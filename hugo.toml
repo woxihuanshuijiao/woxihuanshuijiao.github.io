@@ -1,6 +1,6 @@
 baseURL = 'https://woxihuanshuijiao.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '菡's Land'
 theme = "PaperMod"
 
 [menu]
@@ -9,3 +9,7 @@ theme = "PaperMod"
     name = "目录" # 网页上显示的按钮名字
     url = "/categories/" 
     weight = 10 
+
+[params.label]
+  text = "Phantom Frontier - 幽灵地带"
+  icon = "static/favicon.png"
