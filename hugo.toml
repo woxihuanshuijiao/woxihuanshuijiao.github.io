@@ -12,4 +12,6 @@ theme = "PaperMod"
 
 [params.label]
   text = "菡's Land"
-  icon = "static/favicon.png"
+
+[params.assets]
+  favicon = "static/favicon.png"
