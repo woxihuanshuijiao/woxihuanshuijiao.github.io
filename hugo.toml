@@ -12,6 +12,7 @@ theme = "PaperMod"
 
 [params.label]
   text = "菡's Land"
+  icon = "https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/logo_final.png"
 
 [params.assets]
-  favicon = "static/favicon.png"
+  favicon = "https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/favicon.png"
