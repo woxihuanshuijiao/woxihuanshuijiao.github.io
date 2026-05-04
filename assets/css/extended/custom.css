@@ -74,10 +74,89 @@ body::before {
     opacity: 0.2; 
     
     /* 确保背景在最底层，不遮挡文字和卡片 */
-    z-index: -1; 
+    z-index: -2; 
 }
 
 /* 配合背景，建议微调一下页面整体感觉 */
 body {
     background-color: var(--theme); /* 底色保持你之前设置的灰紫色 */
+}
+
+/* 亮闪闪的星尘层 - 增强版 */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 增加颗粒的亮度和分布 */
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 1px, transparent 1.5px),
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.95) 1.2px, transparent 2px),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.9) 1px, transparent 1.5px),
+        radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.85) 1.5px, transparent 2.5px);
+    background-size: 150px 150px, 250px 250px, 200px 200px, 300px 300px;
+    
+    /* 提高透明度 */
+    opacity: 0.8; 
+    z-index: -1; 
+    pointer-events: none;
+    
+    /* 注入灵魂：闪烁动画 */
+    animation: twinkle 5s infinite alternate;
+}
+
+/* 定义闪烁逻辑 */
+@keyframes twinkle {
+    0% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+    100% { opacity: 0.4; transform: scale(1); }
+}
+
+/* 确保主容器是透明的，否则会挡住背景 */
+.main, .wrapper {
+    background: transparent !important;
+}
+
+/* --- 2. 重磨砂玻璃卡片 (精准复刻效果) --- */
+.post-entry, .post-single {
+    /* 1. 更浅、更通透的浅灰色背景，模仿玻璃的通透感 */
+    background: rgba(255, 255, 255, 0.15) !important;
+    
+    /* 2. 核心：大幅增加模糊深度，实现重度磨砂效果 */
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    backdrop-filter: blur(25px) saturate(180%);
+    
+    /* 3. 干净的边缘：使用极细、高光、半透明的边框 */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 12px !important;
+    
+    /* 4. 微妙的阴影，增加深度，但不生硬 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+    
+    transition: all 0.3s ease !important;
+}
+
+/* 深色模式下的重磨砂玻璃 (兼容性调整) */
+.dark .post-entry, .dark .post-single {
+    /* 深色模式下更浅，以确保模糊效果明显 */
+    background: rgba(45, 45, 58, 0.25) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    -webkit-backdrop-filter: blur(30px) saturate(140%);
+    backdrop-filter: blur(30px) saturate(140%);
+}
+
+/* 让笔记中的表格自适应卡片宽度 */
+.post-content table {
+    width: 100% !important;
+    display: table; /* 确保它以表格模式渲染而非块级 */
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05); /* 给表格加一点微弱的底色区分 */
+    border-radius: 8px;
+}
+
+/* 调整表格单元格间距，让内容不那么紧凑 */
+.post-content th, .post-content td {
+    padding: 12px 15px !important;
 }
