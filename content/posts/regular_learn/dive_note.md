@@ -27,7 +27,7 @@ OW课程学习知识点记录。
 | **vent** | n. | 排气孔 |
 | **cramp** | n. | 抽筋 |
 | **sound travels** | - | 声音传播 |
-| **suspended particles** | - | 悬浮颗粒 |
+| **suspended <br>particles** | - | 悬浮颗粒 |
 | **mild current** | - | 温和的水流 |
 | **entangled** | adj. | 被缠住 |
 | **Nitrogen** | n. | 氮气 |
@@ -40,16 +40,16 @@ OW课程学习知识点记录。
 | 英文单词 / 短语 | 词性 | 中文释义与备注 |
 | :--- | :---: | :--- |
 | **scuba gear / kit / unit** | - | 潜水装备 |
-| **scuba cylinders** | - | 潜水气瓶 |
+| **scuba <br>cylinders** | - | 潜水气瓶 |
 | **confined water** | - | 平静水域（通常指泳池或浅水区） |
 | **buoyancy** | n. | 浮力 |
 | **eardrum** | n. | 鼓膜 |
 | **regulator** | n. | 呼吸调节器 |
 | **snorkels** | n. | 呼吸管 |
 | **fins** | n. | 脚蹼 / 蛙鞋 |
-| **inflatable bladder** | - | BCD 上的气囊 |
-| **pony bottles / self-contained ascent bottles** | - | 小马瓶 / 自给式上升瓶 |
-| **first stage / second stage** | - | 一级头 / 二级头（调节器系统中的两个核心部件） |
+| **inflatable <br>bladder** | - | BCD 上的气囊 |
+| **pony bottles / <br>self-contained ascent bottles** | - | 小马瓶 / 自给式上升瓶 |
+| **first stage / <br>second stage** | - | 一级头 / 二级头（调节器系统中的两个核心部件） |
 | **burst disk** | - | 防爆片（安装在气瓶阀门上） |
 | **trim** | n. | 身体姿态（加上配重后想要达到的理想水平流线型状态） |
 | **mask** | n. | 潜水面镜 |
@@ -62,15 +62,15 @@ OW课程学习知识点记录。
 | **thermocline** | n. | 温跃层（水下温度突然大幅下降的水层） |
 | **briefing / debrief** | n./v. | 下水前简报 / 潜水后总结汇报 |
 | **buddy check** | - | 潜伴下水前相互检查 |
-| **Max Depth & Bottom Time** | - | 最大下潜深度 & 水底时间 |
-| **regulator clearing / purge** | v. | 调节器排水 / 按下排气钮 |
-| **regulator recovery / sweep arm** | - | 调节器寻回 / 向后划臂寻找 |
+| **Max Depth & <br>Bottom Time** | - | 最大下潜深度 & 水底时间 |
+| **regulator <br>clearing / purge** | v. | 调节器排水 / 按下排气钮 |
+| **regulator <br>recovery / sweep arm** | - | 调节器寻回 / 向后划臂寻找 |
 | **free flow** | n. | 调节器持续漏气 |
 | **sip the air** | v. | “啜吸”空气（应对调节器大漏气时的呼吸法） |
 | **fin pivot** | - | 蛙鞋平浮（用于建立中性浮力的练习） |
 | **kick cycles** | - | 踢水周期（用于在水下丈量距离） |
-| **enact buddy separation procedures** | v. | 执行潜伴失散程序 |
-| **enriched air / Nitrox** | n. | 高氧空气 |
+| **enact buddy <br>separation <br>procedures** | v. | 执行潜伴失散程序 |
+| **enriched air / <br>Nitrox** | n. | 高氧空气 |
 
 
 

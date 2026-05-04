@@ -115,8 +115,45 @@ body::after {
 }
 
 /* 确保主容器是透明的，否则会挡住背景 */
+:root {
+    --main-width: 1100px;      /* 技术笔记页的最大宽度 */
+    --index-width: 850px;     /* 首页列表的最大宽度，更适合阅读 */
+}
+
+/* 首页列表：收窄宽度，聚焦视线 */
+.list .main {
+    max-width: var(--index-width) !important;
+}
+
+/* 笔记详情页：保持较宽空间，给表格和公式留白 */
+.single .main {
+    max-width: var(--main-width) !important;
+}
+
 .main, .wrapper {
     background: transparent !important;
+    max-width: var(--main-width);
+    margin: 0 auto;
+    width: 100%; /* 确保在小屏幕下自动降级为 100% */
+}
+/* 优化列表卡片外观 */
+.post-entry {
+    padding: 30px 40px !important; /* 增加内边距，让内容更紧凑 */
+    margin-bottom: 25px !important;
+}
+
+/* 限制首页摘要的行长，提高可读性 */
+.entry-content {
+    max-width: 700px; /* 即使卡片很宽，文字也不会铺满全屏 */
+    line-height: 1.6;
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+/* 标题稍微加粗一点，增加视觉锚点 */
+.entry-header h2 {
+    font-size: 26px !important;
+    font-weight: 500 !important;
 }
 
 /* --- 2. 重磨砂玻璃卡片 (精准复刻效果) --- */
@@ -147,16 +184,59 @@ body::after {
     backdrop-filter: blur(30px) saturate(140%);
 }
 
-/* 让笔记中的表格自适应卡片宽度 */
+/* 优化表格容器：防止撑破卡片 */
 .post-content table {
+    display: block;             /* 关键：在手机端将 table 转为 block 以便滚动 */
     width: 100% !important;
-    display: table; /* 确保它以表格模式渲染而非块级 */
+    overflow-x: auto;          /* 允许横向滚动 */
+    -webkit-overflow-scrolling: touch; /* 保证 iOS 滚动流畅 */
+    word-break: normal;
+    white-space: nowrap;       /* 防止表头文字强制换行 */
     margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.05); /* 给表格加一点微弱的底色区分 */
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
+    border-collapse: collapse;
 }
 
-/* 调整表格单元格间距，让内容不那么紧凑 */
-.post-content th, .post-content td {
-    padding: 12px 15px !important;
+/* 移动端专属微调 */
+@media screen and (max-width: 768px) {
+    /* 减小单元格间距，为文字腾出空间 */
+    .post-content th, .post-content td {
+        padding: 8px 10px !important; 
+        font-size: 14px; /* 稍微缩小字号 */
+    }
+
+    /* 减小卡片左右内边距，让文字更接近边缘（全屏感） */
+    .post-single {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    /* 确保主容器宽度不会溢出 */
+    .main {
+        margin: 0 10px;
+        width: auto !important;
+    }
+}
+
+.post-content td {
+    /* 允许在单词内换行，防止长单词撑破表格 */
+    word-wrap: break-word;
+    word-break: break-all; 
+    
+    /* 恢复正常换行逻辑 */
+    white-space: normal !important; 
+    
+    /* 保持较好的行高，增加阅读舒适度 */
+    line-height: 1.5;
+}
+
+.post-content th {
+    /* 表头通常建议不换行，保持整齐 */
+    white-space: nowrap;
+}
+
+.post-content td {
+    hyphens: auto;
+    -webkit-hyphens: auto;
 }
