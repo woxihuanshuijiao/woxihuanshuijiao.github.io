@@ -16,3 +16,5 @@ theme = "PaperMod"
 
 [params.assets]
   favicon = "https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/favicon.png"
+  theme_color = "#E6E8EF"
+  msapplication_TileColor = "#C9C5D6"
