@@ -3,13 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-04-21T19:59:26+08:00</lastmod>
+    <lastmod>2026-05-02T17:47:03+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/regular_learn/dive_note/</loc>
+    <lastmod>2026-05-02T17:47:03+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-21T19:59:26+08:00</lastmod>
+    <lastmod>2026-05-02T17:47:03+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-21T19:59:26+08:00</lastmod>
+    <lastmod>2026-05-02T17:47:03+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2026-05-02T17:47:03+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%E4%BB%8B%E7%BB%8D/</loc>
     <lastmod>2026-04-21T19:59:26+08:00</lastmod>

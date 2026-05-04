@@ -7,7 +7,11 @@ showToc = true
 TocOpen = false
 +++
 
-# 潜水核心词汇本 (Diving Vocabulary)
+OW课程学习知识点记录。
+
+<!--more-->
+
+# 潜水核心词汇 (Diving Vocabulary)
 
 ## 1.1 一般词汇 (General)
 
@@ -76,7 +80,7 @@ TocOpen = false
 
 ## part 1.1
 
-#### 2.1 Water pressure
+### 2.1 Water pressure
 ---
 - Every 10 metres/33 feet increase **1 bar** pressure.
 
@@ -84,11 +88,10 @@ TocOpen = false
 
 - For example: when at 20m/66 feet, the body pressure is **3 bar**, gas density is **3x**, air volume is **1/3**.
 
-
 ![depth&pressure](https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/pressure.png)
 
 ---
-#### 2.2 The Effects of Increasing Pressure on Body Air Spaces
+### 2.2 The Effects of Increasing Pressure on Body Air Spaces
 
 - The three major body air spaces affected are: **Ears, Sinuses, Mask**.
 
@@ -100,14 +103,14 @@ TocOpen = false
 - Lungs are at normal volum during diving, so breath normally.
 
 ---
-#### 2.3 Decreasing Pressure Effects
+### 2.3 Decreasing Pressure Effects
 
 - The most important rule in scuba diving is to breathe continuously and never, ever hold your breath. (持续匀速呼吸)
 - Any time your regulator is not in your mouth you **exhale** a slow, steady bubble stream so you aren’t holding your breath. (没咬咬嘴的时候要呼气)
 - No gas-producing foods.(潜水前不要吃太多含气食物/会产生气体的食物)
 
 ---
-#### 2.4 Breathing Underwater
+### 2.4 Breathing Underwater
 
 - The deeper you are, the faster you use your air.(下潜越深，耗氧越多)
 - Swimming use air faster than stationary.
@@ -116,7 +119,7 @@ TocOpen = false
 
 ---
 
-#### 2.5 Buoyancy and Controlling Buoyancy
+### 2.5 Buoyancy and Controlling Buoyancy
 
 - neutral buoyancy(中性浮力): an object weighs the same as the water it displaces.
 - BCD (Buoyancy Control Device)
@@ -237,6 +240,7 @@ TocOpen = false
   - 拖曳辅助绳 (trail line)
   - 游泳绳 (swim line)
   - 锚绳 (mooring or anchor line): 将船只固定在潜点的绳索
+
 ![boatline](https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/boatline.png)
 
 - **下水后，游向anchor line，然后沿着anchor line下潜**
@@ -312,6 +316,7 @@ TocOpen = false
   - 准线：永远是潜水员的行进方向
   - 定位外圈：定位外圈可以旋转，可以将上面的两个小的平行指标对准指北磁针。这有助于在游泳和导航时保持直线
   - 方向指示：数字刻度用来记录前进方向
+
 ![compass](https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/compass.png)
 - 在我使用指北针导航游泳时，我应将**指北磁针**保持在指标内。
 
@@ -405,7 +410,7 @@ TocOpen = false
 - **Skin diving skills**（不带氧气瓶及BCD的潜水/进阶浮潜）
 - Exit – Remove scuba kit in the water
 
-### 6.1.4. Open Water Dive 
+### 6.1.5. Open Water Dive 
 
 __由于有部分知识和Confined Water一样，只是搬到海里练习，只补充海里有的__
 

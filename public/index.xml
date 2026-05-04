@@ -6,8 +6,15 @@
     <description>Recent content on Phantom Frontier - 幽灵地带</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 19:59:26 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 17:47:03 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OW学习笔记</title>
+      <link>http://localhost:1313/posts/regular_learn/dive_note/</link>
+      <pubDate>Sat, 02 May 2026 17:47:03 +0800</pubDate>
+      <guid>http://localhost:1313/posts/regular_learn/dive_note/</guid>
+      <description>&lt;p&gt;OW课程学习知识点记录。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>关于此空间</title>
       <link>http://localhost:1313/posts/introduction/introduction/</link>

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>OW学习笔记 | Phantom Frontier - 幽灵地带</title>
+<meta name="keywords" content="">
+<meta name="description" content="OW课程学习知识点记录。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/regular_learn/dive_note/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/regular_learn/dive_note/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="菡&#39;s Land (Alt + H)">
+                <img src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/logo_final.png" alt="" aria-label="logo"
+                    height="30">菡&#39;s Land</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/categories/" title="目录">
+                    <span>目录</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      OW学习笔记
+    </h1>
+    <div class="post-meta"><span title='2026-05-02 17:47:03 +0800 CST'>May 2, 2026</span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e6%bd%9c%e6%b0%b4%e6%a0%b8%e5%bf%83%e8%af%8d%e6%b1%87-diving-vocabulary" aria-label="潜水核心词汇 (Diving Vocabulary)">潜水核心词汇 (Diving Vocabulary)</a><ul>
+                    
+            <li>
+                <a href="#11-%e4%b8%80%e8%88%ac%e8%af%8d%e6%b1%87-general" aria-label="1.1 一般词汇 (General)">1.1 一般词汇 (General)</a></li>
+            <li>
+                <a href="#12-%e6%bd%9c%e6%b0%b4%e7%9b%b8%e5%85%b3%e8%a3%85%e5%a4%87%e4%b8%8e%e6%9c%af%e8%af%ad-scuba--gear" aria-label="1.2 潜水相关装备与术语 (Scuba &amp; Gear)">1.2 潜水相关装备与术语 (Scuba &amp; Gear)</a></li></ul>
+            </li>
+            <li>
+                <a href="#part-1-%e5%9f%ba%e6%9c%ac%e6%8a%80%e6%9c%af" aria-label="Part 1 基本技术">Part 1 基本技术</a><ul>
+                    
+            <li>
+                <a href="#part-11" aria-label="part 1.1">part 1.1</a><ul>
+                    
+            <li>
+                <a href="#21-water-pressure" aria-label="2.1 Water pressure">2.1 Water pressure</a></li>
+            <li>
+                <a href="#22-the-effects-of-increasing-pressure-on-body-air-spaces" aria-label="2.2 The Effects of Increasing Pressure on Body Air Spaces">2.2 The Effects of Increasing Pressure on Body Air Spaces</a></li>
+            <li>
+                <a href="#23-decreasing-pressure-effects" aria-label="2.3 Decreasing Pressure Effects">2.3 Decreasing Pressure Effects</a></li>
+            <li>
+                <a href="#24-breathing-underwater" aria-label="2.4 Breathing Underwater">2.4 Breathing Underwater</a></li>
+            <li>
+                <a href="#25-buoyancy-and-controlling-buoyancy" aria-label="2.5 Buoyancy and Controlling Buoyancy">2.5 Buoyancy and Controlling Buoyancy</a></li></ul>
+            </li>
+            <li>
+                <a href="#part-12-equipment" aria-label="Part 1.2 Equipment">Part 1.2 Equipment</a></li>
+            <li>
+                <a href="#part-13-skills" aria-label="Part 1.3 skills">Part 1.3 skills</a></li></ul>
+            </li>
+            <li>
+                <a href="#part-2-%e7%8e%af%e5%a2%83%e4%b8%8e%e6%bd%9c%e6%b0%b4%e6%b5%81%e7%a8%8b" aria-label="Part 2 环境与潜水流程">Part 2 环境与潜水流程</a><ul>
+                    
+            <li>
+                <a href="#part-21" aria-label="part 2.1">part 2.1</a></li>
+            <li>
+                <a href="#part-22-skills" aria-label="part 2.2 Skills">part 2.2 Skills</a></li></ul>
+            </li>
+            <li>
+                <a href="#part-3-%e6%95%91%e6%8f%b4%e4%b8%8e%e7%b4%a7%e6%80%a5%e6%83%85%e5%86%b5" aria-label="Part 3 救援与紧急情况">Part 3 救援与紧急情况</a><ul>
+                    
+            <li>
+                <a href="#part-31-%e6%bd%9c%e6%b0%b4%e6%8a%80%e5%b7%a7" aria-label="part 3.1 潜水技巧">part 3.1 潜水技巧</a></li>
+            <li>
+                <a href="#part-32-%e9%97%ae%e9%a2%98%e5%a4%84%e7%90%86" aria-label="part 3.2 问题处理">part 3.2 问题处理</a></li>
+            <li>
+                <a href="#part-33-%e8%a3%85%e5%a4%87" aria-label="part 3.3 装备">part 3.3 装备</a></li>
+            <li>
+                <a href="#part-34-%e6%8a%80%e5%b7%a7" aria-label="part 3.4 技巧">part 3.4 技巧</a></li></ul>
+            </li>
+            <li>
+                <a href="#part-4-%e8%87%aa%e5%ae%9a%e4%b9%89" aria-label="Part 4 自定义">Part 4 自定义</a><ul>
+                    
+            <li>
+                <a href="#part-41-%e4%b8%aa%e6%80%a7%e5%8c%96%e8%ae%be%e5%a4%87" aria-label="part 4.1 个性化设备">part 4.1 个性化设备</a></li>
+            <li>
+                <a href="#part-42-%e6%8a%80%e5%b7%a7" aria-label="part 4.2 技巧">part 4.2 技巧</a></li></ul>
+            </li>
+            <li>
+                <a href="#part-5" aria-label="Part 5">Part 5</a><ul>
+                    
+            <li>
+                <a href="#part-51" aria-label="part 5.1">part 5.1</a></li></ul>
+            </li>
+            <li>
+                <a href="#part-6-%e6%af%8f%e4%b8%80%e7%ab%a0%e8%8a%82%e6%bd%9c%e6%b0%b4skills%e6%80%bb%e7%bb%93" aria-label="Part 6. 每一章节潜水skills总结">Part 6. 每一章节潜水skills总结</a><ul>
+                    
+            <li>
+                <a href="#part-61" aria-label="part 6.1">part 6.1</a><ul>
+                    
+            <li>
+                <a href="#611-confined-water-dive-one" aria-label="6.1.1. Confined Water Dive One">6.1.1. Confined Water Dive One</a></li>
+            <li>
+                <a href="#612-confined-water-dive-two" aria-label="6.1.2. Confined Water Dive Two">6.1.2. Confined Water Dive Two</a></li>
+            <li>
+                <a href="#613-confined-water-dive-three" aria-label="6.1.3. Confined Water Dive Three">6.1.3. Confined Water Dive Three</a></li>
+            <li>
+                <a href="#614-confined-water-dive-four" aria-label="6.1.4. Confined Water Dive Four">6.1.4. Confined Water Dive Four</a></li>
+            <li>
+                <a href="#615-open-water-dive" aria-label="6.1.5. Open Water Dive">6.1.5. Open Water Dive</a>
+            </li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><p>OW课程学习知识点记录。</p>
+<h1 id="潜水核心词汇-diving-vocabulary">潜水核心词汇 (Diving Vocabulary)<a hidden class="anchor" aria-hidden="true" href="#潜水核心词汇-diving-vocabulary">#</a></h1>
+<h2 id="11-一般词汇-general">1.1 一般词汇 (General)<a hidden class="anchor" aria-hidden="true" href="#11-一般词汇-general">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">英文单词 / 短语</th>
+          <th style="text-align: center">词性</th>
+          <th style="text-align: left">中文释义与备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>coral reef</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">珊瑚礁</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>adrenaline</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">肾上腺素</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>hazard</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">风险</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>molecule</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">分子</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>sinuses</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">鼻窦</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>pinch</strong></td>
+          <td style="text-align: center">v.</td>
+          <td style="text-align: left">捏住</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>bruising</strong></td>
+          <td style="text-align: center">n./v.</td>
+          <td style="text-align: left">瘀伤，擦伤</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>vent</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">排气孔</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>cramp</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">抽筋</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>sound travels</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">声音传播</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>suspended particles</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">悬浮颗粒</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>mild current</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">温和的水流</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>entangled</strong></td>
+          <td style="text-align: center">adj.</td>
+          <td style="text-align: left">被缠住</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Nitrogen</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">氮气</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>tingling</strong></td>
+          <td style="text-align: center">adj.</td>
+          <td style="text-align: left">针刺感（减压病的感受之一）</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="12-潜水相关装备与术语-scuba--gear">1.2 潜水相关装备与术语 (Scuba &amp; Gear)<a hidden class="anchor" aria-hidden="true" href="#12-潜水相关装备与术语-scuba--gear">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">英文单词 / 短语</th>
+          <th style="text-align: center">词性</th>
+          <th style="text-align: left">中文释义与备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>scuba gear / kit / unit</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">潜水装备</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>scuba cylinders</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">潜水气瓶</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>confined water</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">平静水域（通常指泳池或浅水区）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>buoyancy</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">浮力</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>eardrum</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">鼓膜</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>regulator</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">呼吸调节器</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>snorkels</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">呼吸管</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>fins</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">脚蹼 / 蛙鞋</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>inflatable bladder</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">BCD 上的气囊</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>pony bottles / self-contained ascent bottles</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">小马瓶 / 自给式上升瓶</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>first stage / second stage</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">一级头 / 二级头（调节器系统中的两个核心部件）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>burst disk</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">防爆片（安装在气瓶阀门上）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>trim</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">身体姿态（加上配重后想要达到的理想水平流线型状态）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>mask</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">潜水面镜</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>deflate / inflate</strong></td>
+          <td style="text-align: center">v.</td>
+          <td style="text-align: left">排气 / 充气（通常指操作 BCD）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>giant stride</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">跨步式入水</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>back roll</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">背滚式入水</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>safety stop</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">安全停留</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>NDL</strong> (No Decompression Limit)</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">免减压极限</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>CESA</strong> (Controlled Emergency Swimming Ascent)</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">有控制式紧急游泳上升</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>thermocline</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">温跃层（水下温度突然大幅下降的水层）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>briefing / debrief</strong></td>
+          <td style="text-align: center">n./v.</td>
+          <td style="text-align: left">下水前简报 / 潜水后总结汇报</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>buddy check</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">潜伴下水前相互检查</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Max Depth &amp; Bottom Time</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">最大下潜深度 &amp; 水底时间</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>regulator clearing / purge</strong></td>
+          <td style="text-align: center">v.</td>
+          <td style="text-align: left">调节器排水 / 按下排气钮</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>regulator recovery / sweep arm</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">调节器寻回 / 向后划臂寻找</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>free flow</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">调节器持续漏气</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>sip the air</strong></td>
+          <td style="text-align: center">v.</td>
+          <td style="text-align: left">“啜吸”空气（应对调节器大漏气时的呼吸法）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>fin pivot</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">蛙鞋平浮（用于建立中性浮力的练习）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>kick cycles</strong></td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: left">踢水周期（用于在水下丈量距离）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>enact buddy separation procedures</strong></td>
+          <td style="text-align: center">v.</td>
+          <td style="text-align: left">执行潜伴失散程序</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>enriched air / Nitrox</strong></td>
+          <td style="text-align: center">n.</td>
+          <td style="text-align: left">高氧空气</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="part-1-基本技术">Part 1 基本技术<a hidden class="anchor" aria-hidden="true" href="#part-1-基本技术">#</a></h1>
+<h2 id="part-11">part 1.1<a hidden class="anchor" aria-hidden="true" href="#part-11">#</a></h2>
+<h3 id="21-water-pressure">2.1 Water pressure<a hidden class="anchor" aria-hidden="true" href="#21-water-pressure">#</a></h3>
+<hr>
+<ul>
+<li>
+<p>Every 10 metres/33 feet increase <strong>1 bar</strong> pressure.</p>
+</li>
+<li>
+<p>As go deeper, the gas volume will decreases and the gas molecules get compressed. The gas density will increases.</p>
+</li>
+<li>
+<p>For example: when at 20m/66 feet, the body pressure is <strong>3 bar</strong>, gas density is <strong>3x</strong>, air volume is <strong>1/3</strong>.</p>
+</li>
+</ul>
+<p><img alt="depth&amp;pressure" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/pressure.png"></p>
+<hr>
+<h3 id="22-the-effects-of-increasing-pressure-on-body-air-spaces">2.2 The Effects of Increasing Pressure on Body Air Spaces<a hidden class="anchor" aria-hidden="true" href="#22-the-effects-of-increasing-pressure-on-body-air-spaces">#</a></h3>
+<ul>
+<li>
+<p>The three major body air spaces affected are: <strong>Ears, Sinuses, Mask</strong>.</p>
+</li>
+<li>
+<p><strong>Equalization</strong> (耳压平衡): pinch nose and blow against it. Equalize every metre/few feet, before you feel discomfort. <!-- raw HTML omitted -->可以向下捏压住鼻子<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>When in water and feel mask tightly suck on face, use nose exhale. (下潜后面镜内和海里有压差，要呼气使面镜内充满空气平衡)</p>
+</li>
+<li>
+<p>When can&rsquo;t qua: Signal <strong>“problem”</strong> and point to your ear.</p>
+</li>
+<li>
+<p>Lungs are at normal volum during diving, so breath normally.</p>
+</li>
+</ul>
+<hr>
+<h3 id="23-decreasing-pressure-effects">2.3 Decreasing Pressure Effects<a hidden class="anchor" aria-hidden="true" href="#23-decreasing-pressure-effects">#</a></h3>
+<ul>
+<li>The most important rule in scuba diving is to breathe continuously and never, ever hold your breath. (持续匀速呼吸)</li>
+<li>Any time your regulator is not in your mouth you <strong>exhale</strong> a slow, steady bubble stream so you aren’t holding your breath. (没咬咬嘴的时候要呼气)</li>
+<li>No gas-producing foods.(潜水前不要吃太多含气食物/会产生气体的食物)</li>
+</ul>
+<hr>
+<h3 id="24-breathing-underwater">2.4 Breathing Underwater<a hidden class="anchor" aria-hidden="true" href="#24-breathing-underwater">#</a></h3>
+<ul>
+<li>The deeper you are, the faster you use your air.(下潜越深，耗氧越多)</li>
+<li>Swimming use air faster than stationary.</li>
+<li>Breathe slowly and deeply.</li>
+<li>如有问题发生，冷静，调整好呼吸</li>
+</ul>
+<hr>
+<h3 id="25-buoyancy-and-controlling-buoyancy">2.5 Buoyancy and Controlling Buoyancy<a hidden class="anchor" aria-hidden="true" href="#25-buoyancy-and-controlling-buoyancy">#</a></h3>
+<ul>
+<li>neutral buoyancy(中性浮力): an object weighs the same as the water it displaces.</li>
+<li>BCD (Buoyancy Control Device)</li>
+<li>inhale, increasing buoyancy. exhale, decreasing buoyancy.</li>
+</ul>
+<hr>
+<h2 id="part-12-equipment">Part 1.2 Equipment<a hidden class="anchor" aria-hidden="true" href="#part-12-equipment">#</a></h2>
+<ul>
+<li>
+<p><strong>Scuba Kit</strong>: four parts, BDC<!-- raw HTML omitted -->1<!-- raw HTML omitted -->, Regulator<!-- raw HTML omitted -->2<!-- raw HTML omitted -->, Cylinder<!-- raw HTML omitted -->3<!-- raw HTML omitted -->, Weight system<!-- raw HTML omitted -->4<!-- raw HTML omitted -->(leads 铅块)
+<img alt="equipment" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/equipment.png"></p>
+</li>
+<li>
+<p><strong>BCD</strong></p>
+<ul>
+<li>A. Inflatable bladder: inflate or deflate to change buoyancy(放气或充气来调节浮力)</li>
+<li>B. LPI (low pressure inflator) mechanism: press button to inflate or deflate.(inflates with air from scuba cylinder 充入的气体是气瓶里的)</li>
+<li>C. Overpressure/quick exhaust valves: automatically vent</li>
+<li>D. Weight system</li>
+</ul>
+</li>
+<li>
+<p><strong>Regulators</strong></p>
+<ul>
+<li>A. First stage “hub”: supplies air</li>
+<li>B. Second stage</li>
+<li>C. Alternate air source</li>
+<li>D. Low-pressure inflator hose</li>
+<li>E. The SPG/computer: shows the air pressure remaining in the cylinder</li>
+</ul>
+</li>
+</ul>
+<h2 id="part-13-skills">Part 1.3 skills<a hidden class="anchor" aria-hidden="true" href="#part-13-skills">#</a></h2>
+<ul>
+<li>水下交流手势</li>
+</ul>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture1.png"></p>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture2.png"></p>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture3.png"></p>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture4.png"></p>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture5.png"></p>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture6.png"></p>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture7.png"></p>
+<p><img alt="gesture" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/gesture8.png"></p>
+<ul>
+<li><strong>排水</strong>：mask/second stage，when clear mask(面镜排水)，keeping exhaling.</li>
+<li>供气：&gt;= 50bar/500psi 时提醒潜导返回</li>
+</ul>
+<hr>
+<h1 id="part-2-环境与潜水流程">Part 2 环境与潜水流程<a hidden class="anchor" aria-hidden="true" href="#part-2-环境与潜水流程">#</a></h1>
+<h2 id="part-21">part 2.1<a hidden class="anchor" aria-hidden="true" href="#part-21">#</a></h2>
+<ul>
+<li>
+<p><strong>空气死腔（Dead Air Space）</strong>：通道里的空气是“无效”。</p>
+<ul>
+<li>由于气体交换只发生在肺泡，每次呼吸时，只有被吸入到肺里的空气完成了气体交换，然而停留在喉管、鼻腔（<!-- raw HTML omitted -->Anatomical Dead Space<!-- raw HTML omitted -->）的气体形成了一个空气死腔。</li>
+<li>潜水时，穿戴的设备会形成额外的死腔（<!-- raw HTML omitted -->Mechanical Dead Space<!-- raw HTML omitted -->）。</li>
+</ul>
+</li>
+<li>
+<p><strong>呼吸道控制</strong>：吸气时舌头抵住上颚，tongue pressed against the upper jaw，若咳嗽也不要吐出咬嘴。每次吸气咬嘴里会残留一部分水，吸气后可快速吐气排出残留水分。
+<img alt="breath" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/breath.png"></p>
+</li>
+<li>
+<p>&ldquo;BWRAF&rdquo;: 下水前检查</p>
+<ul>
+<li>B – BCD</li>
+<li>W – Weight</li>
+<li>R — Releases</li>
+<li>A — Air</li>
+<li>F — Final check</li>
+</ul>
+</li>
+<li>
+<p>气体管理</p>
+<ul>
+<li>开始<strong>上升</strong>的气压 = 计划回程气压 + 上升过程预计消耗的气压</li>
+<li><strong>调头</strong>的气压：用完潜水可用气量的1/3时返回，</li>
+</ul>
+</li>
+<li>
+<p><strong>下潜步骤</strong>：①确认潜伴准备好 ②检查好定位，船只或是地标 ③将呼吸管换成调节器 ④启动潜水电脑表 ⑤打出下潜手势并排出BCD空气和潜伴一起下潜。（下潜后需要频繁平衡耳压，并在一段时间后开始对BCD进行少量多次充气）</p>
+</li>
+<li>
+<p><strong>上升步骤</strong>：①比出上升手势 ②检查潜水电脑表 ③向上看并举起BCD充气阀管线 ④缓慢上升 ⑤边上升边选择。 （上升过程缓慢排出BCD空气防止上升过快） <!-- raw HTML omitted -->上升速率18米/min<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><strong>安全停留</strong>：上升到6米时切换中性浮力，然后在5米处停留3-5分钟。</p>
+</li>
+<li>
+<p><strong>抵达水面</strong>：浮出水面立刻为BCD充气</p>
+</li>
+</ul>
+<h2 id="part-22-skills">part 2.2 Skills<a hidden class="anchor" aria-hidden="true" href="#part-22-skills">#</a></h2>
+<ul>
+<li>跳水技巧：跳水时按住regulator &amp; mask 防止进水</li>
+<li><strong>清除面镜积水</strong>
+<ul>
+<li>深吸一口气，用单手或双手的食指用力按住面镜框架的上缘</li>
+<li>抬头45度</li>
+<li>鼻子呼气（进入面镜的空气会积聚在顶部，并产生压力将密度更大的水从面镜下方的裙边挤压出去）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="part-3-救援与紧急情况">Part 3 救援与紧急情况<a hidden class="anchor" aria-hidden="true" href="#part-3-救援与紧急情况">#</a></h1>
+<h2 id="part-31-潜水技巧">part 3.1 潜水技巧<a hidden class="anchor" aria-hidden="true" href="#part-31-潜水技巧">#</a></h2>
+<ul>
+<li>水底休息：只用蛙鞋前端停靠或只用指尖轻触地面</li>
+<li>能见度：在水中平视可看到的最远距离就是能见度</li>
+<li>在温和的水流中潜水，开始时要慢慢<strong>逆流前进</strong>。在返回时如此做，水流会将您推回出水点，而非推离。</li>
+<li>错过出水点：需<strong>穿越水流</strong>（您的游向应与水流的流向垂直）游到绳索或岸边</li>
+<li>波浪与碎浪
+<ul>
+<li>在近海地区破碎表示下方有浅礁、沙洲或是沉船。</li>
+<li>如果波浪破碎、重组然后再次破碎，这表示波浪在向海岸推进的途中，底部升起，落下，再升起。</li>
+<li>如果波浪沿一连续直线破碎但中间一个明显的<strong>缺口</strong>，这表示底下可能有一个通道。</li>
+</ul>
+</li>
+<li>海浪种类
+<ul>
+<li>沿岸流（Coastal current）：与海岸线平行</li>
+<li>离岸流（Rip Current）：与流向平行游出离岸流区再垂直游回岸边</li>
+<li>涌升流（Upwelling flow）：海底水带到海面，使能见度更加清晰</li>
+<li>潮汐（tide）：涨潮时适合潜水</li>
+</ul>
+</li>
+<li>波浪通常在水深大约等于浪高（1:1 的比例）时开始破碎</li>
+<li><strong>船潜用词</strong>
+<ul>
+<li>船头 (bow)</li>
+<li>船尾 (stern)</li>
+<li>左舷 (port)</li>
+<li>右舷 (starboard)</li>
+<li>下风面 (leeward)</li>
+<li>上风面 (windward)</li>
+<li>船桥 (bridge)（驾驶室）</li>
+<li>洗手间 (head)</li>
+<li>厨房 (galley)</li>
+<li>游泳台阶 (swim step)</li>
+</ul>
+</li>
+</ul>
+<p><img alt="boat" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/boat.png"></p>
+<ul>
+<li>小船船潜使用<strong>背滚法</strong>入水</li>
+<li>船潜使用的绳类
+<ul>
+<li>拖曳辅助绳 (trail line)</li>
+<li>游泳绳 (swim line)</li>
+<li>锚绳 (mooring or anchor line): 将船只固定在潜点的绳索</li>
+</ul>
+</li>
+</ul>
+<p><img alt="boatline" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/boatline.png"></p>
+<ul>
+<li><strong>下水后，游向anchor line，然后沿着anchor line下潜</strong></li>
+<li>下潜后<!-- raw HTML omitted --><strong>逆流游动</strong><!-- raw HTML omitted -->，方便返程时顺流</li>
+<li>上升若没抓住anchor line，应上升到水面再游泳穿越水流去抓住<strong>拖曳辅助绳</strong></li>
+</ul>
+<h2 id="part-32-问题处理">part 3.2 问题处理<a hidden class="anchor" aria-hidden="true" href="#part-32-问题处理">#</a></h2>
+<ul>
+<li>水面问题：必要时丢弃BCD和配重，以最小代价漂浮在水面</li>
+<li>水底问题
+<ul>
+<li>regulator漏气：用手握住二级头，将<strong>咬嘴按压贴紧嘴唇</strong>。 让过量的空气自由溢出 or(将咬嘴的一半放在口中)。“小口吸入”需要的空气量并立即开始上升。</li>
+<li>被缠住：找潜伴、穿脱BCD逃生</li>
+<li>气用完也没有备用气源
+<ul>
+<li>A. <strong>有控制式紧急游泳上升</strong>（距离水面6-9米）：向上看并快速游，边上升边“啊。。。”呼出膨胀气体，不要脱装备，咬住regulator</li>
+<li>B. <strong>紧急浮力上升</strong>：要卸除配重，其余同A，快到水面时“大”字形张开身体避免速率过快</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="part-33-装备">part 3.3 装备<a hidden class="anchor" aria-hidden="true" href="#part-33-装备">#</a></h2>
+<ul>
+<li>求生设备：哨子，低压喇叭，充气式信号棒，延迟水面浮标，信号镜，信号灯/闪光灯（夜潜）</li>
+<li>水面浮具
+<ul>
+<li>潜水旗：潜水员在潜水旗周围 15 米／50 英尺范围内，船只30米</li>
+</ul>
+</li>
+</ul>
+<h2 id="part-34-技巧">part 3.4 技巧<a hidden class="anchor" aria-hidden="true" href="#part-34-技巧">#</a></h2>
+<ul>
+<li>背滚式入水
+<ul>
+<li>BCD部分充气时入水</li>
+<li>下巴往胸膛收拢</li>
+<li>往后仰，顺着身体重量往后滚入水中</li>
+<li>状态稳定之后，比出 “ok” 的手势</li>
+</ul>
+</li>
+<li>重新穿脱装备</li>
+<li>抽筋：打手势停下来，然后抓着脚蹼前面伸展肌肉</li>
+</ul>
+<hr>
+<h1 id="part-4-自定义">Part 4 自定义<a hidden class="anchor" aria-hidden="true" href="#part-4-自定义">#</a></h1>
+<h2 id="part-41-个性化设备">part 4.1 个性化设备<a hidden class="anchor" aria-hidden="true" href="#part-41-个性化设备">#</a></h2>
+<ul>
+<li>网状袋：装垃圾，装小东西，运设备</li>
+<li>记录板与记录本：根据大小来选</li>
+<li>潜水手电筒：夜潜 + 白天照射胆小的水中生物所躲藏的孔洞和裂缝</li>
+<li>潜水日志和电子潜水日志，每一趟潜水后最少要记录下：
+<ul>
+<li>日期</li>
+<li>潜点（名称或位置）</li>
+<li>潜伴</li>
+<li>潜水深度和时长</li>
+<li>目标／描述</li>
+</ul>
+</li>
+</ul>
+<h2 id="part-42-技巧">part 4.2 技巧<a hidden class="anchor" aria-hidden="true" href="#part-42-技巧">#</a></h2>
+<ul>
+<li>
+<p>休闲潜水氧气比例：32% 或 36%</p>
+</li>
+<li>
+<p>易出现的问题：氧气中毒，污染的空气，减压疾病，气体麻醉</p>
+</li>
+<li>
+<p><strong>休闲潜水最大深度：40m</strong></p>
+</li>
+<li>
+<p>纯氧（100%）的深度极限为 <strong>6 米／20</strong>英尺，再深氧气会产生毒性。</p>
+</li>
+<li>
+<p>高氧空气 (EANx) 的氧含量超过 21%</p>
+</li>
+<li>
+<p><strong>减压病（DCS）</strong>：如果体内氮气含量过多，上升过程中，氮气溶出的速度可能会快过身体可自然排出的速度。这将造成过多的氮气在血管和身体组织中形成气泡，就像打开汽水瓶压力减低后出现气泡一样。</p>
+</li>
+<li>
+<p>每次潜水都要缓慢上升（速度不超过每分钟 <strong>18 米/60 英尺</strong>，或根据潜水电脑表所要求的速度，以较慢的速度为准）并在<strong>5 米/15 英尺</strong>的深度，做 <strong>3 分钟</strong>的<strong>安全停留</strong>。</p>
+</li>
+<li>
+<p>深度与免停留时间
+<img alt="stop" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/stop.png"></p>
+</li>
+</ul>
+<h1 id="part-5">Part 5<a hidden class="anchor" aria-hidden="true" href="#part-5">#</a></h1>
+<h2 id="part-51">part 5.1<a hidden class="anchor" aria-hidden="true" href="#part-51">#</a></h2>
+<ul>
+<li>潜水后乘坐飞机
+<ul>
+<li>单次潜水（非重复潜水） ：休息最少 12 小时</li>
+<li>重复潜水或连续多天的潜水：休息最少 18 小时</li>
+</ul>
+</li>
+<li>300米及以上算高海拔潜水</li>
+<li><strong>气体麻醉</strong>本身是无害，大多数人会在30m深度开始感觉气体麻醉</li>
+<li>指北针
+<ul>
+<li>指北磁针：永远指向地球的磁北</li>
+<li>准线：永远是潜水员的行进方向</li>
+<li>定位外圈：定位外圈可以旋转，可以将上面的两个小的平行指标对准指北磁针。这有助于在游泳和导航时保持直线</li>
+<li>方向指示：数字刻度用来记录前进方向</li>
+</ul>
+</li>
+</ul>
+<p><img alt="compass" loading="lazy" src="https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/ow/compass.png"></p>
+<ul>
+<li>在我使用指北针导航游泳时，我应将<strong>指北磁针</strong>保持在指标内。</li>
+</ul>
+<hr>
+<h1 id="part-6-每一章节潜水skills总结">Part 6. 每一章节潜水skills总结<a hidden class="anchor" aria-hidden="true" href="#part-6-每一章节潜水skills总结">#</a></h1>
+<h2 id="part-61">part 6.1<a hidden class="anchor" aria-hidden="true" href="#part-61">#</a></h2>
+<h3 id="611-confined-water-dive-one">6.1.1. Confined Water Dive One<a hidden class="anchor" aria-hidden="true" href="#611-confined-water-dive-one">#</a></h3>
+<ul>
+<li>Briefing – signals introduction/review</li>
+<li>Assemble（组装）, put on and adjust equipment, predive check</li>
+<li>Inflate/deflate BCD at surface, low-pressure inflator（LPI/给BCD充气的管道）LPI Disconnect, Oral Inflation（口吹充气）</li>
+<li>Breathing underwater</li>
+<li><!-- raw HTML omitted --><strong>Regulator clearing</strong> (two methods)<!-- raw HTML omitted -->
+<ul>
+<li>Blowing / Exhaling（吹一大口气排气）</li>
+<li>Purge Button（按按钮）</li>
+</ul>
+</li>
+<li>Regulator recovery</li>
+<li>Clearing a partially flooded mask</li>
+<li>SPG use</li>
+<li>Swimming on the surface</li>
+<li>Descending and equalizing</li>
+<li>Hand signals underwater</li>
+<li>Alternate air source stationary 在没气的情况下使用潜伴的备用气源，步骤1.发出信号，2.接管气源，调节器排水并呼吸，3.肢体连接，两人都伸出手抓住对方BCD，4. 原地平复 (Stationary phase)：在原地保持静止，正常深呼吸至少3组</li>
+<li>Free time for skill practice and fun</li>
+<li>Ascents and returning to the surface</li>
+<li>Emergency weight drop (dive flexible) 紧急情况丢弃配重</li>
+<li>BCD oral inflation at the surface</li>
+<li>Exit</li>
+</ul>
+<h3 id="612-confined-water-dive-two">6.1.2. Confined Water Dive Two<a hidden class="anchor" aria-hidden="true" href="#612-confined-water-dive-two">#</a></h3>
+<ul>
+<li>Briefing and dive planning</li>
+<li>Air awareness and management</li>
+<li>Assemble, put on and adjust equipment, predive safety check</li>
+<li>Entry – giant stride 跨步式入水 (suggested)</li>
+<li>Proper weighting and weight check</li>
+<li><strong>Snorkel clearing</strong> 浮潜呼吸管清洁
+<ul>
+<li>Blast: 确保管子已经露出水面然后用力吹一口气</li>
+<li>Displacement: 上升出水前，抬起头，眼睛看着水面，持续吐气</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted --> <strong>Snorkel-to-regulator, regulator-to-snorkel exchange</strong> <!-- raw HTML omitted --></li>
+<li>Swimming on the surface</li>
+<li>Five point <strong>descent</strong> with reference
+<ul>
+<li>Signal</li>
+<li>Orient</li>
+<li>Regulator</li>
+<li>Time</li>
+<li>Deflate：Loose grip（虚握）引导绳</li>
+</ul>
+</li>
+<li>Neutral buoyancy – fin pivot 蛙鞋平浮 (suggested)</li>
+<li>Loose cylinder band</li>
+<li>Clearing a <strong>fully flooded mask</strong></li>
+<li><strong>Mask removal and replacement; no mask breathing</strong></li>
+<li><strong>Disconnect</strong> free flowing LP inflator</li>
+<li>Gas depletion exercise</li>
+<li>Five point <strong>ascent</strong> with reference
+<ul>
+<li>Signal</li>
+<li>Time</li>
+<li>Elevate：举起LPI</li>
+<li>Position / Look up，看向头顶</li>
+<li>Sound / Ascend slowly，依旧虚握绳，如果上升太快及时排气</li>
+</ul>
+</li>
+<li>Free time for skill practice and fun</li>
+<li>Exit – ladder exit</li>
+<li>Debrief（任务汇报）</li>
+<li>Post dive equipment care</li>
+</ul>
+<h3 id="613-confined-water-dive-three">6.1.3. Confined Water Dive Three<a hidden class="anchor" aria-hidden="true" href="#613-confined-water-dive-three">#</a></h3>
+<ul>
+<li>Equipment assembly, dive planning, gearing up and predive safety check</li>
+<li>Deep water entry</li>
+<li>Weight and trim（身体平衡状态） check and adjustment</li>
+<li>Remove and replace weights at surface</li>
+<li>Cramp（抽筋） release at surface</li>
+<li>Cramp release underwater</li>
+<li>Five point descent with visual reference</li>
+<li>Neutral buoyancy</li>
+<li>Trim and weight positioning（姿态与配重分布）
+<ul>
+<li>理想的 Trim（水平流线型）：完美的姿态是身体与水底保持完全平行（水平），膝盖微弯（大约 90 度），蛙鞋略微抬起，就像跳伞运动员在空中的姿势一样</li>
+</ul>
+</li>
+<li>Air depletion（耗尽） and alternate air source combined exercise</li>
+<li>Controlled Emergency Swimming Ascent (CESA)</li>
+</ul>
+<h3 id="614-confined-water-dive-four">6.1.4. Confined Water Dive Four<a hidden class="anchor" aria-hidden="true" href="#614-confined-water-dive-four">#</a></h3>
+<ul>
+<li>Put scuba kit on in the water</li>
+<li>Tired-diver tows（拖拽疲惫的潜水员）</li>
+<li>visual reference descents, swimming and ascents near sensitive environments</li>
+<li>No mask swim</li>
+<li>Freeflow（持续漏气的） regulator breathing</li>
+<li>Orally inflate BCD underwater – hover</li>
+<li><strong>Skin diving skills</strong>（不带氧气瓶及BCD的潜水/进阶浮潜）</li>
+<li>Exit – Remove scuba kit in the water</li>
+</ul>
+<h3 id="615-open-water-dive">6.1.5. Open Water Dive<a hidden class="anchor" aria-hidden="true" href="#615-open-water-dive">#</a></h3>
+<p><strong>由于有部分知识和Confined Water一样，只是搬到海里练习，只补充海里有的</strong></p>
+<ul>
+<li>Trim check</li>
+<li>Orally inflate BCD at surface</li>
+<li>Buoyancy control – establish neutral buoyancy with oral BCD inflation and hover</li>
+<li><strong>Safty Stay</strong> 距离海面5m时停留</li>
+</ul>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Phantom Frontier - 幽灵地带</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

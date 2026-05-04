@@ -1,0 +1,83 @@
+/* 修改深色模式下的背景色 */
+.dark {
+    --theme: #1b1b22!important;       /* 极深灰紫，像星空背景 */
+    --entry: #2d2d3a!important;       /* 迷雾紫卡片，与背景拉开层次 */
+    --primary: #d1d1e0!important;     /* 月光白，用于文字，清晰但不刺眼 */
+    --secondary: #a3a3c2!important;   /* 烟灰紫，用于日期和副标题 */
+    --tertiary: #5c5c7a!important;    /* 边框色 */
+    --content: #d1d1e0!important;     /* 正文文字 */
+    --code-bg: #252533!important;     /* 代码块背景 */
+    --link-color: #b39ddb!important;  /* 链接色，使用图 2 光环的紫色 */
+}
+
+:root {
+    --theme: #f0f0f5!important;       /* 浅紫灰色，模拟晨雾背景 */
+    --entry: #ffffff!important;       /* 纯白卡片 */
+    --primary: #3d3d5c!important;     /* 深紫灰文字，保证可读性 */
+    --secondary: #7a7a99!important;   /* 中灰紫 */
+    --tertiary: #d1d1e0!important;    /* 浅灰紫边框 */
+    --content: #2e2e4d!important;     /* 正文文字 */
+    --code-bg: #f7f7fa!important;     /* 浅色代码块 */
+    --link-color: #7e57c2!important;  /* 较深的紫色链接 */
+}
+/* 统一首页卡片样式 */
+.first-entry {
+    margin-bottom: var(--gap) !important;
+    padding: var(--gap) !important;
+    background: var(--entry) !important;
+    border-radius: var(--radius) !important;
+    border: 1px solid rgba(159, 134, 192, 0.1) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 让卡片看起来像是漂浮在云雾中 */
+.post-entry {
+    background: var(--entry)!important;
+    border-radius: 12px!important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease!important;
+    border: 1px solid rgba(159, 134, 192, 0.1)!important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05)!important;
+}
+
+.dark .post-entry {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4)!important;
+}
+
+/* 鼠标悬停时的轻微浮动效果 */
+.post-entry:hover {
+    transform: translateY(-5px)!important;
+    box-shadow: 0 8px 30px rgba(126, 87, 194, 0.15)!important;
+}
+
+/* 针对数学公式的特殊颜色（如果开启了数学引擎） */
+.katex {
+    color: var(--secondary)!important;
+}
+
+
+/* 创建一个覆盖全屏的背景层 */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 引用你刚才保存的图片路径 */
+    background-image: url("https://raw.githubusercontent.com/woxihuanshuijiao/woxihuanshuijiao.github.io/refs/heads/main/static/background.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* 这里调节透明度：0 为完全透明，1 为完全不透明 */
+    /* 建议设定在 0.3 - 0.6 之间，既有氛围感又不影响阅读 */
+    opacity: 0.2; 
+    
+    /* 确保背景在最底层，不遮挡文字和卡片 */
+    z-index: -1; 
+}
+
+/* 配合背景，建议微调一下页面整体感觉 */
+body {
+    background-color: var(--theme); /* 底色保持你之前设置的灰紫色 */
+}
